@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style/style.css" type="text/css" />
+
+		<title>quiz game</title>
+	</head>
+	<body>
+		<div class="container">
+			<img src="resources/Stan_Nations.jpg" alt="map of stan nations" />
+		</div>
+		<form action="">
+			<select onchange="comp(0)" name="opt1" id="opt1">
+				<option value="default" disabled selected>country n:1</option>
+				<option value="Afghanistan">Afghanistan</option>
+				<option value="Kazakhstan">Kazakhstan</option>
+				<option value="Kyrgyzstan">Kyrgyzstan</option>
+				<option value="Pakistan">Pakistan</option>
+				<option value="Tajikistan">Tajikistan</option>
+				<option value="Turkmenistan">Turkmenistan</option>
+				<option value="Uzbekistan">Uzbekistan</option></select
+			><br />
+			<select onchange="comp(1)" name="opt2" id="opt2">
+				<option value="default" disabled selected>country n:2</option>
+				<option value="Afghanistan">Afghanistan</option>
+				<option value="Kazakhstan">Kazakhstan</option>
+				<option value="Kyrgyzstan">Kyrgyzstan</option>
+				<option value="Pakistan">Pakistan</option>
+				<option value="Tajikistan">Tajikistan</option>
+				<option value="Turkmenistan">Turkmenistan</option>
+				<option value="Uzbekistan">Uzbekistan</option></select
+			><br />
+			<select onchange="comp(2)" name="opt3" id="opt3">
+				<option value="default" disabled selected>country n:3</option>
+				<option value="Afghanistan">Afghanistan</option>
+				<option value="Kazakhstan">Kazakhstan</option>
+				<option value="Kyrgyzstan">Kyrgyzstan</option>
+				<option value="Pakistan">Pakistan</option>
+				<option value="Tajikistan">Tajikistan</option>
+				<option value="Turkmenistan">Turkmenistan</option>
+				<option value="Uzbekistan">Uzbekistan</option></select
+			><br />
+			<select onchange="comp(3)" name="opt4" id="opt4">
+				<option value="default" disabled selected>country n:4</option>
+				<option value="Afghanistan">Afghanistan</option>
+				<option value="Kazakhstan">Kazakhstan</option>
+				<option value="Kyrgyzstan">Kyrgyzstan</option>
+				<option value="Pakistan">Pakistan</option>
+				<option value="Tajikistan">Tajikistan</option>
+				<option value="Turkmenistan">Turkmenistan</option>
+				<option value="Uzbekistan">Uzbekistan</option></select
+			><br />
+			<select onchange="comp(4)" name="opt5" id="opt5">
+				<option value="default" disabled selected>country n:5</option>
+				<option value="Afghanistan">Afghanistan</option>
+				<option value="Kazakhstan">Kazakhstan</option>
+				<option value="Kyrgyzstan">Kyrgyzstan</option>
+				<option value="Pakistan">Pakistan</option>
+				<option value="Tajikistan">Tajikistan</option>
+				<option value="Turkmenistan">Turkmenistan</option>
+				<option value="Uzbekistan">Uzbekistan</option></select
+			><br />
+			<select onchange="comp(5)" name="opt6" id="opt6">
+				<option value="default" disabled selected>country n:6</option>
+				<option value="Afghanistan">Afghanistan</option>
+				<option value="Kazakhstan">Kazakhstan</option>
+				<option value="Kyrgyzstan">Kyrgyzstan</option>
+				<option value="Pakistan">Pakistan</option>
+				<option value="Tajikistan">Tajikistan</option>
+				<option value="Turkmenistan">Turkmenistan</option>
+				<option value="Uzbekistan">Uzbekistan</option></select
+			><br />
+			<select onchange="comp(6)" name="opt7" id="opt7">
+				<option value="default" disabled selected>country n:7</option>
+				<option value="Afghanistan">Afghanistan</option>
+				<option value="Kazakhstan">Kazakhstan</option>
+				<option value="Kyrgyzstan">Kyrgyzstan</option>
+				<option value="Pakistan">Pakistan</option>
+				<option value="Tajikistan">Tajikistan</option>
+				<option value="Turkmenistan">Turkmenistan</option>
+				<option value="Uzbekistan">Uzbekistan</option>
+			</select>
+			<button onclick="test()" type="button">submit</button>
+		</form>
+		<p id="result"></p>
+		<script src="main.js"></script>
+	</body>
+</html>
