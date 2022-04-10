@@ -1,7 +1,10 @@
 var arr = document.getElementsByTagName("select");
+var result = document.getElementById("result");
 var x;
+var i;
+
 function comp(x) {
-	for (var i = 0; i < arr.length; i++) {
+	for (i = 0; i < arr.length; i++) {
 		if (x == i) {
 			continue;
 		} else if (arr[x].value == arr[i].value) {
@@ -10,22 +13,47 @@ function comp(x) {
 	}
 }
 
-var result = document.getElementById("result");
+var correctArr = [
+	"Kazakhstan",
+	"Uzbekistan",
+	"Kyrgyzstan",
+	"Turkmenistan",
+	"Tajikistan",
+	"Afghanistan",
+	"Pakistan",
+];
 
 function test() {
-	if (
-		arr[0].value == "Kazakhstan" &&
-		arr[1].value == "Uzbekistan" &&
-		arr[2].value == "Kyrgyzstan" &&
-		arr[3].value == "Turkmenistan" &&
-		arr[4].value == "Tajikistan" &&
-		arr[5].value == "Afghanistan" &&
-		arr[6].value == "Pakistan"
-	) {
-		result.innerHTML = "correct";
+	var tester = true;
+	for (i = 0; i < arr.length; i++) {
+		if (arr[i].value != correctArr[i]) {
+			tester = false;
+		}
+	}
+	if (tester == true) {
+		result.innerText = "correct";
 		result.style.color = "green";
 	} else {
-		result.innerHTML = "incorrect";
+		result.innerText = "incorrect";
 		result.style.color = "red";
 	}
+	colorCode();
+}
+
+function colorCode() {
+	for (var i = 0; i < arr.length; i++) {
+		if (arr[i].value == correctArr[i]) {
+			arr[i].style.borderColor = "green";
+		} else {
+			arr[i].style.borderColor = "red";
+		}
+	}
+}
+
+function resetenater() {
+	for (var i = 0; i < arr.length; i++) {
+		arr[i].value = "default";
+		arr[i].style.borderColor = "";
+	}
+	result.innerText = "";
 }

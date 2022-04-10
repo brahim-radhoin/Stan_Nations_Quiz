@@ -19,7 +19,7 @@ body {
 
 	img {
 		margin: 1em auto;
-		width: 70%;
+		width: 60%;
 	}
 }
 
@@ -28,6 +28,8 @@ select {
 	margin-left: 2em;
 }
 
-.result {
+#result {
 	display: inline;
+	margin-left: 1rem;
+	font-size: 3em;
 }
